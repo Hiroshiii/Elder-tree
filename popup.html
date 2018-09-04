@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div hidden>
+	<form id="form1">
+		<div>
+			<label for="session_id">Session Id:</label>
+			<input type="text" id="session_id" value="1234567890" />
+		</div>
+		<div>
+			<label for="query">Enter a phrase:</label>
+			<input type="text" id="query" value="take me to elder tree" />
+		</div>
+		<div>
+			<input style="margin-top:5px;" type="submit" id="submitButton" value="Submit" />
+		</div>
+	</form>
+</div>
+<div style="text-align:center;">
+<button style="font-size:40px;" id="btn"><i class="fa fa-microphone"></i></button>
+</div>
+<input style="margin-top:15px;" type="text" id="voice_input" value="" />
+<div style="margin-top:15px;">Results from DialogFlow:</div>
+<a id="enablemicrophone" style="display: none" href="index.html">
+enable microphone
+</a>
+
+<div id="results"></div>
+<script src="popup.js"></script>
+</body>
+</html>
+
